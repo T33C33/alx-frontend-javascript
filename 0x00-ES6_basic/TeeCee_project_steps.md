@@ -106,3 +106,9 @@ I had also used `npm audit` to check for vulnerabilities and `npm audit fix` to 
 `npm install --save (or -S) package-name` to install a package and save it to the dependencies list in package.json.
 
 `npm install --save-dev (or -D) package-name` to install a package and save it to the devDependencies list in package.json.
+
+I deleted the package.json and package-lock.json file and folder respectively; used the script provided and not `npm install -y` and ran npm install again to see if the node_modules folder is created again. It was created again. I
+
+Couldn't use jest as it is for unit testing and there's no requirement for unit testing yet. I will use it when I have to do unit testing.
+
+Although I used `npx eslint .` to check for linting errors, and used `npx eslint . --fix` to fix the linting errors.
