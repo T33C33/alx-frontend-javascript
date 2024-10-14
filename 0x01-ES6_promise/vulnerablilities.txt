@@ -1,0 +1,203 @@
+# npm audit report
+
+braces  <3.0.3
+Severity: high
+Uncontrolled resource consumption in braces - https://github.com/advisories/GHSA-grv7-fg5c-xmjg
+fix available via `npm audit fix --force`
+Will install jest@29.7.0, which is a breaking change
+node_modules/jest-cli/node_modules/braces
+  micromatch  <=4.0.7
+  Depends on vulnerable versions of braces
+  node_modules/jest-cli/node_modules/micromatch
+    @jest/core  <=25.5.4
+    Depends on vulnerable versions of @jest/reporters
+    Depends on vulnerable versions of @jest/transform
+    Depends on vulnerable versions of jest-config
+    Depends on vulnerable versions of jest-haste-map
+    Depends on vulnerable versions of jest-message-util
+    Depends on vulnerable versions of jest-resolve-dependencies
+    Depends on vulnerable versions of jest-runner
+    Depends on vulnerable versions of jest-runtime
+    Depends on vulnerable versions of jest-snapshot
+    Depends on vulnerable versions of jest-util
+    Depends on vulnerable versions of jest-watcher
+    Depends on vulnerable versions of micromatch
+    node_modules/jest-cli/node_modules/@jest/core
+      jest-cli  23.5.0 - 24.9.0
+      Depends on vulnerable versions of @jest/core
+      Depends on vulnerable versions of jest-config
+      Depends on vulnerable versions of jest-util
+      node_modules/jest-cli
+        jest  24.2.0-alpha.0 - 24.9.0
+        Depends on vulnerable versions of jest-cli
+        node_modules/jest
+    @jest/transform  <=24.9.0
+    Depends on vulnerable versions of jest-haste-map
+    Depends on vulnerable versions of jest-util
+    Depends on vulnerable versions of micromatch
+    node_modules/jest-cli/node_modules/@jest/transform
+      @jest/environment  <=24.9.0
+      Depends on vulnerable versions of @jest/fake-timers
+      Depends on vulnerable versions of @jest/transform
+      node_modules/jest-cli/node_modules/@jest/environment
+        jest-runner  21.0.0-alpha.1 - 24.9.0
+        Depends on vulnerable versions of @jest/environment
+        Depends on vulnerable versions of jest-config
+        Depends on vulnerable versions of jest-haste-map
+        Depends on vulnerable versions of jest-jasmine2
+        Depends on vulnerable versions of jest-message-util
+        Depends on vulnerable versions of jest-runtime
+        Depends on vulnerable versions of jest-util
+        node_modules/jest-cli/node_modules/jest-runner
+      babel-jest  24.2.0-alpha.0 - 24.9.0
+      Depends on vulnerable versions of @jest/transform
+      node_modules/jest-cli/node_modules/babel-jest
+        jest-config  12.1.1-alpha.2935e14d - 25.5.4
+        Depends on vulnerable versions of @jest/test-sequencer
+        Depends on vulnerable versions of babel-jest
+        Depends on vulnerable versions of jest-environment-jsdom
+        Depends on vulnerable versions of jest-environment-node
+        Depends on vulnerable versions of jest-jasmine2
+        Depends on vulnerable versions of jest-util
+        Depends on vulnerable versions of micromatch
+        node_modules/jest-cli/node_modules/jest-config
+          jest-runtime  18.1.0 - 24.9.0
+          Depends on vulnerable versions of @jest/environment
+          Depends on vulnerable versions of @jest/transform
+          Depends on vulnerable versions of jest-config
+          Depends on vulnerable versions of jest-haste-map
+          Depends on vulnerable versions of jest-message-util
+          Depends on vulnerable versions of jest-snapshot
+          Depends on vulnerable versions of jest-util
+          node_modules/jest-cli/node_modules/jest-runtime
+            jest-jasmine2  18.5.0-alpha.7da3df39 - 24.9.0
+            Depends on vulnerable versions of @jest/environment
+            Depends on vulnerable versions of expect
+            Depends on vulnerable versions of jest-each
+            Depends on vulnerable versions of jest-message-util
+            Depends on vulnerable versions of jest-runtime
+            Depends on vulnerable versions of jest-snapshot
+            Depends on vulnerable versions of jest-util
+            node_modules/jest-cli/node_modules/jest-jasmine2
+    anymatch  1.2.0 - 2.0.0
+    Depends on vulnerable versions of micromatch
+    node_modules/jest-cli/node_modules/anymatch
+      jest-haste-map  18.1.0 - 26.6.2
+      Depends on vulnerable versions of anymatch
+      Depends on vulnerable versions of jest-util
+      Depends on vulnerable versions of micromatch
+      Depends on vulnerable versions of sane
+      node_modules/jest-cli/node_modules/jest-haste-map
+        @jest/reporters  <=26.4.0
+        Depends on vulnerable versions of @jest/environment
+        Depends on vulnerable versions of @jest/transform
+        Depends on vulnerable versions of jest-haste-map
+        Depends on vulnerable versions of jest-runtime
+        Depends on vulnerable versions of jest-util
+        Depends on vulnerable versions of node-notifier
+        node_modules/jest-cli/node_modules/@jest/reporters
+        @jest/test-sequencer  <=24.9.0
+        Depends on vulnerable versions of jest-haste-map
+        Depends on vulnerable versions of jest-runner
+        Depends on vulnerable versions of jest-runtime
+        node_modules/jest-cli/node_modules/@jest/test-sequencer
+      sane  1.5.0 - 4.1.0
+      Depends on vulnerable versions of anymatch
+      Depends on vulnerable versions of micromatch
+      node_modules/jest-cli/node_modules/sane
+    jest-message-util  18.5.0-alpha.7da3df39 - 24.9.0
+    Depends on vulnerable versions of micromatch
+    node_modules/jest-cli/node_modules/jest-message-util
+      @jest/fake-timers  <=24.9.0
+      Depends on vulnerable versions of jest-message-util
+      node_modules/jest-cli/node_modules/@jest/fake-timers
+        jest-environment-jsdom  10.0.2 - 25.5.0
+        Depends on vulnerable versions of @jest/environment
+        Depends on vulnerable versions of @jest/fake-timers
+        Depends on vulnerable versions of jest-util
+        Depends on vulnerable versions of jsdom
+        node_modules/jest-cli/node_modules/jest-environment-jsdom
+        jest-environment-node  24.2.0-alpha.0 - 24.9.0
+        Depends on vulnerable versions of @jest/environment
+        Depends on vulnerable versions of @jest/fake-timers
+        Depends on vulnerable versions of jest-util
+        node_modules/jest-cli/node_modules/jest-environment-node
+        jest-util  24.2.0-alpha.0 - 24.9.0
+        Depends on vulnerable versions of @jest/fake-timers
+        node_modules/jest-cli/node_modules/jest-util
+          jest-each  24.2.0-alpha.0 - 24.9.0
+          Depends on vulnerable versions of jest-util
+          node_modules/jest-cli/node_modules/jest-each
+          jest-watcher  24.2.0-alpha.0 - 24.9.0
+          Depends on vulnerable versions of jest-util
+          node_modules/jest-cli/node_modules/jest-watcher
+      expect  21.0.0-beta.1 - 24.9.0
+      Depends on vulnerable versions of jest-message-util
+      node_modules/jest-cli/node_modules/expect
+        jest-snapshot  23.3.0 - 24.9.0
+        Depends on vulnerable versions of expect
+        Depends on vulnerable versions of jest-message-util
+        node_modules/jest-cli/node_modules/jest-snapshot
+          jest-resolve-dependencies  23.3.0 - 24.9.0
+          Depends on vulnerable versions of jest-snapshot
+          node_modules/jest-cli/node_modules/jest-resolve-dependencies
+
+
+node-notifier  <8.0.1
+Severity: moderate
+OS Command Injection in node-notifier - https://github.com/advisories/GHSA-5fw9-fq32-wv5p
+fix available via `npm audit fix --force`
+Will install jest@29.7.0, which is a breaking change
+node_modules/jest-cli/node_modules/node-notifier
+
+request  *
+Severity: moderate
+Server-Side Request Forgery in Request - https://github.com/advisories/GHSA-p8p7-x288-28g6
+Depends on vulnerable versions of tough-cookie
+fix available via `npm audit fix --force`
+Will install jest@29.7.0, which is a breaking change
+node_modules/jest-cli/node_modules/request
+  jsdom  0.1.20 || 0.2.0 - 16.5.3
+  Depends on vulnerable versions of request
+  Depends on vulnerable versions of request-promise-native
+  Depends on vulnerable versions of tough-cookie
+  node_modules/jest-cli/node_modules/jsdom
+  request-promise-core  *
+  Depends on vulnerable versions of request
+  node_modules/jest-cli/node_modules/request-promise-core
+    request-promise-native  >=1.0.0
+    Depends on vulnerable versions of request
+    Depends on vulnerable versions of request-promise-core
+    Depends on vulnerable versions of tough-cookie
+    node_modules/jest-cli/node_modules/request-promise-native
+
+semver  <5.7.2
+Severity: high
+semver vulnerable to Regular Expression Denial of Service - https://github.com/advisories/GHSA-c2qf-rxjj-qqgw
+fix available via `npm audit fix --force`
+Will install eslint-plugin-jest@28.8.3, which is a breaking change
+node_modules/@typescript-eslint/experimental-utils/node_modules/semver
+  @typescript-eslint/typescript-estree  <=2.0.0-alpha.6
+  Depends on vulnerable versions of semver
+  node_modules/@typescript-eslint/experimental-utils/node_modules/@typescript-eslint/typescript-estree
+    @typescript-eslint/experimental-utils  <=2.0.0-alpha.6
+    Depends on vulnerable versions of @typescript-eslint/typescript-estree
+    node_modules/@typescript-eslint/experimental-utils
+      eslint-plugin-jest  22.6.2 || 22.13.1 - 22.21.0
+      Depends on vulnerable versions of @typescript-eslint/experimental-utils
+      node_modules/eslint-plugin-jest
+
+tough-cookie  <4.1.3
+Severity: moderate
+tough-cookie Prototype Pollution vulnerability - https://github.com/advisories/GHSA-72xf-g2v4-qvf3
+fix available via `npm audit fix --force`
+Will install jest@29.7.0, which is a breaking change
+node_modules/jest-cli/node_modules/tough-cookie
+
+37 vulnerabilities (31 moderate, 6 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
