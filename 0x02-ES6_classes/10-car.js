@@ -5,7 +5,15 @@ export default class Car {
     this._color = color;
   }
 
+  // The [Symbol.species] static getter to return the current constructor
+  static get [Symbol.species]() {
+    return this;
+  }
+
+  // Method to clone the car
   cloneCar() {
-    return new Car(this._brand, this._motor, this._color);
+    // Creates a new instance of the class (or subclass)
+    const Species = this.constructor[Symbol.species];
+    return new Species();
   }
 }
