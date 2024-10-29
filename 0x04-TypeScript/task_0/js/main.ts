@@ -19,18 +19,17 @@ const student2: Student = {
   location: "Lagos",
 };
 
-type studentArray = Array<Student>;
+const studentsList: Array<Student> = [student1, student2];
 
-const studentsList: studentArray = [student1, student2];
-
-const body = document.querySelector("body");
+const body = document.querySelector("body"); // Gets the body element from DOM alterative was to use documet.body
 const table = document.createElement("table");
 
 studentsList.forEach((student) => {
+  // Loop through the studentsList array
   const row = document.createElement("tr");
 
   const firstNameCell = document.createElement("td");
-  firstNameCell.textContent = student.firstName;
+  firstNameCell.textContent = student.firstName; // alternative was to use document.createTextNode(student.firstName)
 
   const locationCell = document.createElement("td");
   locationCell.textContent = student.location;
