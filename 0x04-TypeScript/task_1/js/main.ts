@@ -38,3 +38,32 @@ let printTeacher: printTeacherFunction = (firstName, lastName) =>
   `${firstName.charAt(0)}. ${lastName}`;
 
 console.log(printTeacher("Tikuochi", "Iheukwumere"));
+
+interface forStudentClass {
+  firstName: string;
+  lastName: string;
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+class StudentClass implements forStudentClass {
+  firstName: string;
+  lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework(): string {
+    return "Currently working";
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
+}
+
+let student: forStudentClass = new StudentClass("Tikuochi", "Iheukwumere");
+console.log(student.displayName());
+console.log(student.workOnHomework());
